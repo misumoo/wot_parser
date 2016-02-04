@@ -41,3 +41,11 @@ body {
 .navbar {
   margin-bottom: 0;
 }
+
+div[back-img]{
+  width: 100px;
+  height: 100px;
+  color: black;
+  float: left;
+  margin: 4px;
+}

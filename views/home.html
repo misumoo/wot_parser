@@ -1,4 +1,10 @@
 <div ng-controller="HomeController" ng-init="setup()" xmlns="http://www.w3.org/1999/html">
-  {{account_id}}<br />
-  {{username}}
+  <div>{{username}}</div>
+  <div>{{account_id}}</div>
+  <div ng-repeat="x in tanks">
+    <div back-img="{{x.image}}">
+      {{x.tank_id}} - {{x.mark_of_mastery}}<br />
+      {{x.statistics.wins}}/{{x.statistics.battles}} %{{x.winrate}}<br />
+    </div>
+  </div>
 </div>
